@@ -1,0 +1,194 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply font-sans text-wt-blue-deep bg-wt-off-white antialiased;
+}
+
+.text-gradient-headline {
+  background-image: linear-gradient(90deg, #1e9bfa, #2b4ef0 60%, #0a1445);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-gradient-headline-dark {
+  background-image: linear-gradient(90deg, #1e9bfa, #7fd1ff 60%, #ffffff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero-glow {
+  background-image: radial-gradient(circle at 50% 0%, #eaf0ff 0%, rgba(234, 240, 255, 0) 60%);
+}
+
+.hero-glow-dark {
+  background-image: radial-gradient(circle at 50% 22%, rgba(43, 78, 240, 0.2) 0%, rgba(43, 78, 240, 0) 60%);
+}
+
+/* Faint candlestick chart pattern, tiled low-opacity SVG data URI. Zero runtime requests. */
+.candlestick-bg {
+  position: absolute;
+  inset: auto 0 0 0;
+  height: 140px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='120' viewBox='0 0 240 120'%3E%3Cg stroke='%232B4EF0' stroke-width='2'%3E%3Cline x1='20' y1='20' x2='20' y2='100'/%3E%3Cline x1='60' y1='10' x2='60' y2='90'/%3E%3Cline x1='100' y1='30' x2='100' y2='110'/%3E%3Cline x1='140' y1='15' x2='140' y2='95'/%3E%3Cline x1='180' y1='25' x2='180' y2='105'/%3E%3Cline x1='220' y1='5' x2='220' y2='85'/%3E%3C/g%3E%3Cg fill='%231E9BFA'%3E%3Crect x='12' y='40' width='16' height='40'/%3E%3Crect x='52' y='30' width='16' height='35'/%3E%3Crect x='92' y='55' width='16' height='30'/%3E%3Crect x='132' y='35' width='16' height='45'/%3E%3Crect x='172' y='45' width='16' height='35'/%3E%3Crect x='212' y='25' width='16' height='40'/%3E%3C/g%3E%3C/svg%3E");
+  background-repeat: repeat-x;
+  background-position: bottom;
+  background-size: 240px 120px;
+  opacity: 0.07;
+  pointer-events: none;
+}
+
+.scroll-snap-x {
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+}
+
+.scroll-snap-item {
+  scroll-snap-align: start;
+}
+
+.scroll-fade-mask {
+  mask-image: linear-gradient(to right, transparent 0, black 24px, black calc(100% - 24px), transparent 100%);
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent 0,
+    black 24px,
+    black calc(100% - 24px),
+    transparent 100%
+  );
+}
+
+/* Gradient left accent bar for cards, drawn as a positioned pseudo-element */
+.accent-bar-left {
+  position: relative;
+}
+
+.accent-bar-left::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 12px;
+  bottom: 12px;
+  width: 4px;
+  border-radius: 4px;
+  background-image: linear-gradient(180deg, #2b4ef0, #1e9bfa);
+}
+
+/* Gradient border ring revealed on hover, opacity-only transition */
+.gallery-frame {
+  position: relative;
+  z-index: 0;
+}
+
+.gallery-frame::before {
+  content: '';
+  position: absolute;
+  inset: -2px;
+  border-radius: inherit;
+  background-image: linear-gradient(90deg, #2b4ef0, #1e9bfa);
+  opacity: 0;
+  transition: opacity 200ms ease;
+  z-index: -1;
+}
+
+.gallery-frame:hover::before {
+  opacity: 1;
+}
+
+/* Shine sweep on CTA buttons, transform-only transition */
+.btn-shine {
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-shine::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: linear-gradient(120deg, rgba(255, 255, 255, 0) 30%, rgba(255, 255, 255, 0.35) 50%, rgba(255, 255, 255, 0) 70%);
+  transform: translateX(-100%);
+  transition: transform 600ms ease;
+  pointer-events: none;
+}
+
+.btn-shine:hover::after {
+  transform: translateX(100%);
+}
+
+/* Pulsing LIVE indicator dot */
+@keyframes live-pulse {
+  0% {
+    transform: scale(1);
+    opacity: 0.75;
+  }
+  70%,
+  100% {
+    transform: scale(2.2);
+    opacity: 0;
+  }
+}
+
+.live-pulse {
+  animation: live-pulse 1.8s cubic-bezier(0, 0, 0.2, 1) infinite;
+}
+
+/* Slow floating gold accent dots */
+@keyframes float-slow {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-14px);
+  }
+}
+
+.float-dot-a {
+  animation: float-slow 7s ease-in-out infinite;
+}
+
+.float-dot-b {
+  animation: float-slow 8.5s ease-in-out infinite;
+  animation-delay: 1.5s;
+}
+
+.float-dot-c {
+  animation: float-slow 6.5s ease-in-out infinite;
+  animation-delay: 0.8s;
+}
+
+/* Scroll-reveal fade-up, applied/removed via IntersectionObserver */
+.reveal {
+  transition: transform 400ms ease-out, opacity 400ms ease-out;
+  opacity: 0;
+  transform: translateY(16px);
+}
+
+.reveal-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+  }
+  .reveal {
+    opacity: 1;
+    transform: none;
+  }
+}
