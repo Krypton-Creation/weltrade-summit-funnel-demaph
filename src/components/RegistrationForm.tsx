@@ -53,7 +53,7 @@ export default function RegistrationForm() {
       <form onSubmit={handleSubmit} noValidate className="flex flex-col gap-4 text-left">
         <div className="flex flex-col gap-1.5">
           <label htmlFor="name" className="text-sm font-semibold text-wt-blue-deep">
-            First name
+            Full Name
           </label>
           <input
             id="name"
