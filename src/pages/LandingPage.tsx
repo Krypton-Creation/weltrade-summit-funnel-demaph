@@ -64,7 +64,7 @@ export default function LandingPage() {
                 LIVE TRADING EXPERIENCE
               </div>
               <h1 className="text-[clamp(34px,7vw,60px)] leading-[1.1] tracking-[-0.02em] font-bold text-white max-w-xl">
-                Abuja, <span className="text-gradient-headline-dark">It's Your Turn.</span>
+                Kaduna, <span className="text-gradient-headline-dark">Shin Kuna SHIRYE?</span>
               </h1>
             </div>
 
@@ -74,17 +74,17 @@ export default function LandingPage() {
 
             <div className="flex flex-col items-center lg:items-start text-center lg:text-left gap-6 lg:col-start-1 lg:row-start-2">
               <p className="text-[clamp(15px,1.2vw,18px)] leading-[1.6] text-blue-100/80 max-w-xl">
-                The Abuja Synthetic Trading Summit '26 is here. One room. Hundreds of traders. Live
+                The Kaduna Synthetic Trading Summit '26 is here. One room. Hundreds of traders. Live
                 market action.
               </p>
               <p className="text-[clamp(15px,1.2vw,18px)] leading-[1.6] text-blue-100/80 max-w-xl">
-                Benin came out. Port Harcourt came out. Jos, Ibadan, Ghana, Lagos and Enugu came
-                out. Now the biggest synthetic trading event in the region lands in Abuja.
+                Abuja came out, Benin came out. Port Harcourt came out. Jos, Ibadan, Ghana, Lagos and Enugu came
+                out. Now the biggest synthetic trading event in the region lands in Kaduna.
               </p>
               <div className="flex flex-col sm:flex-row gap-3 sm:gap-6 bg-white/10 border border-white/10 rounded-3xl px-[clamp(18px,3vw,28px)] py-4">
-                <DetailItem icon={Calendar} text="Saturday, September 12" dark />
+                <DetailItem icon={Calendar} text="Saturday, October 3rd" dark />
                 <DetailItem icon={Clock} text="9:00 AM" dark />
-                <DetailItem icon={MapPin} text="3JS Hotel, Close to NHIA, Mafemi Crescent, Jabi" dark />
+                <DetailItem icon={MapPin} text="Dome Suites, 2 M, Adama, City Centre, Kaduna." dark />
               </div>
               <Countdown />
               <p className="text-white font-semibold">
@@ -134,8 +134,8 @@ export default function LandingPage() {
               <Gallery />
             </Reveal>
             <p className="text-[clamp(15px,1.2vw,18px)] leading-[1.6] text-wt-gray-text max-w-2xl">
-              Packed halls. Live sessions. Traders connecting. This is what's coming to Abuja on
-              September 12.
+              Packed halls. Live sessions. Traders connecting. This is what's coming to Kaduna on
+              October 3.
             </p>
           </div>
         </section>
@@ -168,7 +168,7 @@ export default function LandingPage() {
                   ))}
                 </div>
                 <div className="flex flex-col gap-3 bg-wt-blue/[0.03] rounded-3xl p-4 sm:p-6">
-                  <h3 className="font-bold text-wt-blue-deep">September 12 looks like:</h3>
+                  <h3 className="font-bold text-wt-blue-deep">October 3rd looks like:</h3>
                   {POSITIVES.map((line) => (
                     <Card
                       key={line}
@@ -203,8 +203,8 @@ export default function LandingPage() {
               whether your seat will have you in it, or someone else.
             </p>
             <div className="flex flex-col gap-2 bg-white/10 border border-white/10 rounded-3xl px-[clamp(18px,3vw,28px)] py-4 w-full max-w-md">
-              <DetailItem icon={MapPin} text="3JS Hotel, Close to NHIA, Mafemi Crescent, Jabi, Abuja" dark />
-              <DetailItem icon={Calendar} text="Saturday, September 12, 2026" dark />
+              <DetailItem icon={MapPin} text="Dome Suites, 2 M, Adama, City Centre, Kaduna." dark />
+              <DetailItem icon={Calendar} text="Saturday, October 3rd, 2026" dark />
               <DetailItem icon={Clock} text="9:00 AM prompt" dark />
             </div>
             <CtaButton scrollTo="hero-form">RESERVE MY FREE SEAT NOW &rarr;</CtaButton>
