@@ -6,7 +6,7 @@ export default function PrivacyPage() {
       <section>
         <h2 className="font-bold text-wt-blue-deep text-lg mb-2">Who we are</h2>
         <p>
-          This registration platform collects data for the Abuja Synthetic Trading Summit '26, an
+          This registration platform collects data for the Kaduna Synthetic Trading Summit '26, an
           event hosted by Weltrade. Contact for data matters:{' '}
           <a
             href="mailto:support@weltrade.com"
