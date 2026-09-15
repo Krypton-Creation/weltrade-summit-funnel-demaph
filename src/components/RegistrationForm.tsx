@@ -116,7 +116,7 @@ export default function RegistrationForm() {
             >
               Terms
             </Link>
-            , and consent to being contacted about this event by WhatsApp and email.
+            , and consent to being contacted about this event by WhatsApp, call and email.
           </span>
         </label>
         <button
@@ -127,7 +127,7 @@ export default function RegistrationForm() {
           {submitting ? 'Reserving your seat...' : 'RESERVE MY SEAT & JOIN THE GROUP'}
         </button>
         <p className="text-center text-wt-gray-text text-[13px]">
-          Free entry. You will be added to the official WhatsApp group instantly.
+          Free entry. You will be added to the official community instantly.
         </p>
       </form>
     </div>
