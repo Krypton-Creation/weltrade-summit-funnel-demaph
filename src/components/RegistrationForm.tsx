@@ -47,7 +47,7 @@ export default function RegistrationForm() {
       <div className="flex flex-col gap-1 text-left">
         <h2 className="text-xl font-bold text-wt-blue-deep">Reserve Your Free Seat</h2>
         <p className="text-wt-gray-text text-sm">
-          9:00 AM, Saturday September 12. 3JS Hotel, Jabi, Abuja.
+          9:00 AM, Saturday September 3rd. Dome Suites, 2 M, Adama, City Centre, Kaduna.
         </p>
       </div>
       <form onSubmit={handleSubmit} noValidate className="flex flex-col gap-4 text-left">
