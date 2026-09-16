@@ -50,6 +50,29 @@ export default function RegistrationForm() {
           9:00 AM, Saturday September 3rd. Dome Suites, 2 M, Adama, City Centre, Kaduna.
         </p>
       </div>
+      <div className="flex items-start gap-3 rounded-2xl border-2 border-wt-gold bg-wt-gold/15 px-4 py-3.5">
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="20"
+    height="20"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="2"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+    className="lucide lucide-triangle-alert shrink-0 mt-0.5 text-wt-gold"
+  >
+    <path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3" />
+    <path d="M12 9v4" />
+    <path d="M12 17h.01" />
+  </svg>
+  <p className="text-[13px] leading-[1.5] text-wt-blue-deep">
+    <strong>Already registered for this event? Please do not register again.</strong>{" "}
+    Registering more than once causes duplicate entries and can affect your seat
+    confirmation.
+  </p>
+</div>
       <form onSubmit={handleSubmit} noValidate className="flex flex-col gap-4 text-left">
         <div className="flex flex-col gap-1.5">
           <label htmlFor="name" className="text-sm font-semibold text-wt-blue-deep">
