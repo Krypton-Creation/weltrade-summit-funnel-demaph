@@ -47,7 +47,7 @@ export default function RegistrationForm() {
       <div className="flex flex-col gap-1 text-left">
         <h2 className="text-xl font-bold text-wt-blue-deep">Reserve Your Free Seat</h2>
         <p className="text-wt-gray-text text-sm">
-          9:00 AM, Saturday November 28th. Water Cress, Ikeja, Allen, Lagos
+          9:00 AM, Saturday November 28th. Water Cress, Ikeja, Allen, Lagos.
         </p>
       </div>
       <div className="flex items-start gap-3 rounded-2xl border-2 border-wt-gold bg-wt-gold/15 px-4 py-3.5">
