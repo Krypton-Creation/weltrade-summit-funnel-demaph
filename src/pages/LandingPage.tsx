@@ -86,7 +86,7 @@ export default function LandingPage() {
               </div>
               <Countdown />
               <p className="text-white font-semibold">
-                Entry is 100% FREE. Seats are not. Once the hall is full, the doors close. <br>Giveaway and refreshments on the day.</br>
+                Entry is 100% FREE. Seats are not. Once the hall is full, the doors close. <br />Giveaway and refreshments on the day.
               </p>
             </div>
           </div>
