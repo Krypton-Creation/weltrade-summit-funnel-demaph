@@ -64,7 +64,7 @@ export default function LandingPage() {
                 LIVE TRADING EXPERIENCE
               </div>
               <h1 className="text-[clamp(34px,7vw,60px)] leading-[1.1] tracking-[-0.02em] font-bold text-white max-w-xl">
-                Kaduna, <span className="text-gradient-headline-dark">Shin Kuna SHIRYE?</span>
+                Lagos, <span className="text-gradient-headline-dark">We're Back!!!</span>
               </h1>
             </div>
 
@@ -74,21 +74,19 @@ export default function LandingPage() {
 
             <div className="flex flex-col items-center lg:items-start text-center lg:text-left gap-6 lg:col-start-1 lg:row-start-2">
               <p className="text-[clamp(15px,1.2vw,18px)] leading-[1.6] text-blue-100/80 max-w-xl">
-                The Kaduna Synthetic Trading Summit '26 is here. One room. Hundreds of traders. Live
-                market action.
+                The first Lagos edition was a hit. This one is bigger. Welcome to the Weltrade Lagos Synthetic Trading Summit 2.0. Now the biggest synthetic trading event of the year is back to LAGOS.
               </p>
               <p className="text-[clamp(15px,1.2vw,18px)] leading-[1.6] text-blue-100/80 max-w-xl">
-                Abuja came out, Benin came out. Port Harcourt came out. Jos, Ibadan, Ghana, Lagos and Enugu came
-                out. Now the biggest synthetic trading event in the region lands in Kaduna.
+                Curious about synthetic trading? Just starting out? Already in the industry? There is a seat for you. Come and learn, connect with other synthetic traders, explore market insights and discover new strategies.
               </p>
               <div className="flex flex-col sm:flex-row gap-3 sm:gap-6 bg-white/10 border border-white/10 rounded-3xl px-[clamp(18px,3vw,28px)] py-4">
-                <DetailItem icon={Calendar} text="Saturday, October 3rd" dark />
+                <DetailItem icon={Calendar} text="Saturday, November 28th" dark />
                 <DetailItem icon={Clock} text="9:00 AM" dark />
-                <DetailItem icon={MapPin} text="Dome Suites, 2 M, Adama, City Centre, Kaduna." dark />
+                <DetailItem icon={MapPin} text="Water Cress, Ikeja, Allen, Lagos" dark />
               </div>
               <Countdown />
               <p className="text-white font-semibold">
-                Entry is 100% FREE. Seats are not. Once the hall is full, the doors close.
+                Entry is 100% FREE. Seats are not. Once the hall is full, the doors close. <br>Giveaway and refreshments on the day.</br>
               </p>
             </div>
           </div>
@@ -134,8 +132,7 @@ export default function LandingPage() {
               <Gallery />
             </Reveal>
             <p className="text-[clamp(15px,1.2vw,18px)] leading-[1.6] text-wt-gray-text max-w-2xl">
-              Packed halls. Live sessions. Traders connecting. This is what's coming to Kaduna on
-              October 3.
+              Packed halls. Live sessions. Traders connecting. Now it's coming back to Lagos on 28 November.
             </p>
           </div>
         </section>
@@ -146,7 +143,7 @@ export default function LandingPage() {
             <Reveal className="flex flex-col items-center gap-6">
               <Chip label="WHAT HAPPENS INSIDE" icon={TrendingUp} />
               <h2 className="text-[clamp(28px,5vw,44px)] leading-[1.15] font-bold text-wt-blue-deep max-w-2xl">
-                Forget everything you know about <span className="text-gradient-headline">"seminars."</span>
+                This time, it is <span className="text-gradient-headline">"BIGGER!"</span>
               </h2>
               <p className="text-[clamp(15px,1.2vw,18px)] leading-[1.6] text-wt-gray-text max-w-2xl">
                 Nobody is reading PowerPoint slides to you for four hours. This is a LIVE Trading
@@ -168,7 +165,7 @@ export default function LandingPage() {
                   ))}
                 </div>
                 <div className="flex flex-col gap-3 bg-wt-blue/[0.03] rounded-3xl p-4 sm:p-6">
-                  <h3 className="font-bold text-wt-blue-deep">October 3rd looks like:</h3>
+                  <h3 className="font-bold text-wt-blue-deep">November 28th looks like:</h3>
                   {POSITIVES.map((line) => (
                     <Card
                       key={line}
@@ -196,20 +193,19 @@ export default function LandingPage() {
           <div className="candlestick-bg" />
           <Reveal className="relative z-10 max-w-5xl mx-auto flex flex-col items-center text-center gap-6">
             <h2 className="text-[clamp(28px,5vw,44px)] leading-[1.15] font-bold text-white max-w-2xl">
-              One Saturday. One room. <span className="text-wt-gold">Zero excuses.</span>
+              One Saturday. One room. Zero excuses. <span className="text-wt-gold">LAGOS 2.0</span>
             </h2>
             <p className="text-[clamp(15px,1.2vw,18px)] leading-[1.6] text-blue-100/80 max-w-2xl">
-              The venue is in Jabi. The entry is free. The date is set. The only question left is
-              whether your seat will have you in it, or someone else.
+              You heard what happened at the first edition. This one is bigger. Don't just hear the stories this time. Come and experience it for yourself.
             </p>
             <div className="flex flex-col gap-2 bg-white/10 border border-white/10 rounded-3xl px-[clamp(18px,3vw,28px)] py-4 w-full max-w-md">
-              <DetailItem icon={MapPin} text="Dome Suites, 2 M, Adama, City Centre, Kaduna." dark />
-              <DetailItem icon={Calendar} text="Saturday, October 3rd, 2026" dark />
+              <DetailItem icon={MapPin} text="Water Cress, Ikeja, Allen, Lagos" dark />
+              <DetailItem icon={Calendar} text="Saturday, November 28th, 2026" dark />
               <DetailItem icon={Clock} text="9:00 AM prompt" dark />
             </div>
             <CtaButton scrollTo="hero-form">RESERVE MY FREE SEAT NOW &rarr;</CtaButton>
             <p className="text-blue-100/60 text-sm">
-              Free entry. Limited seats. First come, first seated.
+              Free entry. Limited seats. First come, first seated. Giveaway and refreshments on the day.
             </p>
           </Reveal>
         </section>
