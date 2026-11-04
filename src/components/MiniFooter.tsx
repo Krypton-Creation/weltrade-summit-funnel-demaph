@@ -4,7 +4,7 @@ export default function MiniFooter() {
   return (
     <footer className="max-w-5xl mx-auto px-4 py-8 text-center text-wt-gray-text text-sm">
       <p>
-        Weltrade &middot; Dome Suites, 2 M, Adama, City Centre, Kaduna. &middot; &copy; 2026
+        Weltrade &middot; Water Cress, Ikeja, Allen, Lagos. &middot; &copy; 2026
         Weltrade
       </p>
       <p className="mt-2 text-[13px]">
