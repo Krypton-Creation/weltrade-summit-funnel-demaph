@@ -2,7 +2,7 @@ import { useState } from 'react'
 import Chip from './Chip'
 
 const MAX_CANDIDATES = 8
-const CAPTIONS = ['Benin', 'Port Harcourt', 'Jos', 'Ibadan', 'Ghana', 'Lagos', 'Enugu']
+const CAPTIONS = ['Benin', 'Port Harcourt', 'Jos', 'Ibadan', 'Ghana', 'Lagos', 'Enugu', "Abuja", "Kaduna", "Kano", "Abeokuta"]
 
 type ExtStage = 'jpg' | 'jpeg' | 'hidden'
 
